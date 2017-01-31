@@ -5,7 +5,7 @@ setup(name='methodfinder',
       description='',
       author='Dan Bravender',
       author_email='dan.bravender@gmail.com',
-      url='http://dan.bravender.us',
+      url='http://dan.bravender.net',
       packages=['methodfinder'],
      )
 
