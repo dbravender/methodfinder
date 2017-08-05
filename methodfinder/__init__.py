@@ -37,7 +37,7 @@ len([1, 2, 3, 4]) == 4
 max([1, 2, 3, 4]) == 4
 [1, 2, 3, 4].__len__() == 4
 [1, 2, 3, 4].pop() == 4
-    
+
 >>> methodfinder([1, 2, 3, 4], [5], [1, 2, 3, 4, 5])
 o = [1, 2, 3, 4]
 o.append(5)
@@ -92,7 +92,9 @@ def try_method(obj, method, input, expected):
             formatted_input = ''
         if object_copy == expected:  # the horrors of side-effects
             print("o = %s\no.%s(%s)\no == %s" % (pformat(obj),
-                                                 bound_method.__name__, formatted_input, pformat(expected)))
+                                                 bound_method.__name__,
+                                                 formatted_input,
+                                                 pformat(expected)))
     except:
         pass
 
@@ -118,6 +120,7 @@ def try_func(func, input, expected):
                   (func_name, formatted_input, pformat(expected)))
     except:
         pass
+
 
 if __name__ == "__main__":
     import doctest
